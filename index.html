@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастомный Курсор</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="custom-cursor.js" defer></script>
+    <style>
+        body {
+            cursor: url('cursors/pointer.png'), auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .cursor-area {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .cursor-area:hover {
+            cursor: url('cursors/alternate.png'), auto;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: url('cursors/link.png'), auto;
+        }
+        .author {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor-area">
+        <button class="button" onclick="checkCursor()">Проверить курсор</button>
+    </div>
+    <div class="author">
+        Котов Павел Дмитриевич, ИСиП-2-23
+    </div>
+    <script>
+        function checkCursor() {
+            alert('Курсор работает!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "cursors": {
+        "default": "cursors/pointer.png",
+        "handwriting": "cursors/handwriting.png",
+        "link": "cursors/link.png",
+        "move": "cursors/move.png",
+        "unavailable": "cursors/unavailable.png"
+    },
+    "settings": {
+        "cursorSize": "32px",
+        "hoverEffect": true,
+        "clickFeedback": true
+    }
+}

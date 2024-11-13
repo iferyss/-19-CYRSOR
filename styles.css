@@ -1,0 +1,7 @@
+.custom-cursor {
+    position: absolute;
+    width: 32px; /* Укажите ширину вашего курсора */
+    height: 32px; /* Укажите высоту вашего курсора */
+    pointer-events: none; /* Чтобы курсор не блокировал события */
+    transition: opacity 0.5s; /* Плавное появление/исчезновение */
+}
